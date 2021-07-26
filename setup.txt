@@ -1,0 +1,4 @@
+git init
+npm init   //entry point: server.js
+npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+npm i -D nodemon concurrently    //concurrently helps run react and express at the same time.
