@@ -1,10 +1,19 @@
-const express = require('express')
+const express = require("express");
+const connectDB = require('./config/db')
 
-const app = express();
+//Connect DB
+connectDB();
 
-app.get('/' , (req,res) => res.send('API RUNNING'))
+const app = express(); //app is the placeholder for express().
 
-const PORT = process.env.PORT || 5000
+app.get("/", (req, res) => res.send("API RUNNING")); //get request
 
-app.listen(PORT, () => console.log('Server started on port' + PORT))
+//Define routes
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/profile', require('./routes/api/profile'));
+app.use('/api/posts', require('./routes/api/posts'));
 
+const PORT = process.env.PORT || 5000;  //PORT
+
+app.listen(PORT, () => console.log("Server started on port" + PORT)); //RUNS the app by priniting on console

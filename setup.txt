@@ -2,3 +2,11 @@ git init
 npm init   //entry point: server.js
 npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
 npm i -D nodemon concurrently    //concurrently helps run react and express at the same time.
+
+created server.js
+create config>default.json    //This will help us to create global uri which can be used later on.
+create config>db.js     //In this file we will do the mongodb connection
+
+
+create routes>api>profile.js post.js auth.js and users.js //we can do all this work in server.js but it will get messy.
+
