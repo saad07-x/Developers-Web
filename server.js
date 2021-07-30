@@ -1,11 +1,14 @@
 const express = require("express");
 const connectDB = require('./config/db')
 
+const app = express(); //app is the placeholder for express()
 //Connect DB
 connectDB();
 
-const app = express(); //app is the placeholder for express().
+//Init Middleware
+app.use(express.json({extended: false}));
 
+    
 app.get("/", (req, res) => res.send("API RUNNING")); //get request
 
 //Define routes

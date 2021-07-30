@@ -3,10 +3,14 @@ npm init   //entry point: server.js
 npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
 npm i -D nodemon concurrently    //concurrently helps run react and express at the same time.
 
-created server.js
-create config>default.json    //This will help us to create global uri which can be used later on.
-create config>db.js     //In this file we will do the mongodb connection
+create server.js                //We make this as the fist file that runs.
+create config>default.json      //This will help us to create global uri which can be used later on.
+create config>db.js             //In this file we will do the mongodb connection
+create routes>api>profile.js post.js auth.js and users.js   //we can do all this work in server.js but it will get messy.
 
 
-create routes>api>profile.js post.js auth.js and users.js //we can do all this work in server.js but it will get messy.
 
+create models and mongoose schema. model > User.js 
+//-----> Models are the rock band — it is how your API creates, queries, updates, and deletes from your database.
+//----> Mongoose Schema is the drummer in the band — it defines the structure of the document, the default values, its validators and other things.  
+user.js done //This will be used while registering.
