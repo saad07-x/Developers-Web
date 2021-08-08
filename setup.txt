@@ -13,4 +13,13 @@ create routes>api>profile.js post.js auth.js and users.js   //we can do all this
 create models and mongoose schema. model > User.js 
 //-----> Models are the rock band — it is how your API creates, queries, updates, and deletes from your database.
 //----> Mongoose Schema is the drummer in the band — it defines the structure of the document, the default values, its validators and other things.  
-user.js done //This will be used while registering.
+user.js done //This will be used while registering. To validate emails and stuff go to the link: express-validator.github.io
+
+
+JWT TOKEN
+in default.js add     "jwtSecret": "mysecrettoken" 
+then make a middleware for authetication and write code in auth api.
+-This all will help us to know which user is logged in since we res user.
+In the auth route we also add the login verification system
+
+
