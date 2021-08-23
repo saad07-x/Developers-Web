@@ -10,11 +10,14 @@ create routes>api>profile.js post.js auth.js and users.js   //we can do all this
 
 
 
+
+
+---USER---
+
 create models and mongoose schema. model > User.js 
 //-----> Models are the rock band — it is how your API creates, queries, updates, and deletes from your database.
 //----> Mongoose Schema is the drummer in the band — it defines the structure of the document, the default values, its validators and other things.  
 user.js done //This will be used while registering. To validate emails and stuff go to the link: express-validator.github.io
-
 
 JWT TOKEN
 in default.js add     "jwtSecret": "mysecrettoken" 
@@ -23,3 +26,52 @@ then make a middleware for authetication and write code in auth api.
 In the auth route we also add the login verification system
 
 
+
+---PROFILE----
+Create the model.
+First get if the profile is available or not
+Post the details
+Get all profiles
+Get profile by user ID
+Delete profile
+Add experience 
+Add education
+
+
+---POST---
+Create a Post schema. 
+Comments, likes and posting models
+
+
+
+
+Notes:
+req.user.id will contain the currently logged in id.
+Post show is private but profile show is public
+
+
+
+
+FRONT-END
+On terminal: npx crate-react-app client //This will create a react app in client folder.
+Then in pacakge.json add: "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
+
+    in the script section
+In client: npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment    
+Delete client gitignore folder and in client: rm -rf .git
+Delete app.test.js, index.css and logo.svg files from src folder!
+Then in app.js replace the whole code with:
+""" import React, { Fragment } from "react";
+import "./App.css";
+
+const App = () => (
+  <Fragment>
+    <h1>App</h1>
+  </Fragment>
+);
+
+export default App; """
+
+In components folder there are the components of the website
+IN register component we post the details to backend api's using axios
