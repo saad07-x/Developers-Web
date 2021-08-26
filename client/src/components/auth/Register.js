@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from "react";
 import axios from "axios";
+import { Link} from 'react-router-dom'
+
 
 export const Register = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +47,7 @@ export const Register = () => {
       <h1 className='large text-primary'>Sign Up</h1>
       <p className='lead'>
         <i className='fas fa-user'></i> Create Your Account
-      </p>
+      </p>    
       <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input

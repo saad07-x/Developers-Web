@@ -56,4 +56,4 @@ export const Login = () => {
   );
 };
 
-export default Register;
+export default Login;
