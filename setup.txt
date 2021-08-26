@@ -75,3 +75,5 @@ export default App; """
 
 In components folder there are the components of the website
 IN register component we post the details to backend api's using axios
+
+*Axios helps us to connect frontend with node.js
