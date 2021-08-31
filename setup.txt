@@ -77,3 +77,35 @@ In components folder there are the components of the website
 IN register component we post the details to backend api's using axios
 
 *Axios helps us to connect frontend with node.js
+
+
+Create store.js inside src. This is a redux store.
+Create a folder reducers and inside that create index.js
+The folder reducers will contain all the reducers
+
+Inside src make a folder action which will contain all the actions for e.g: alert. Then you also need to create a layout for that alert component.
+Make a index.js file in reducers which will contain the reducers that can be used.
+
+mapStatetoProp function is used. //search.
+
+REGISTERATION:
+Create reducer for auth: 1)Add variables in type.js 2)create auth.js in action 3)Create reducer for auth. 
+4)Modify Register component (In Register component there are 4 steps: 1) import 2)add to export 3)Add prop 4)Add to peremeter in top. Then just call it)
+
+Token should be continously be loaded: We create settoken.js in utils
+add this to auth.js action and auth.js reducers
+*from component > actions > reducers
+
+
+LOGIN:
+1)Modify auth.js in actions
+2)Modify auth.js in reducers (it tells what to if login success or login failed occured. just like in registeration)
+3)Add the effects to component in Login.js
+
+
+LOGOUT:
+1)create type
+2)go to auth actions and create function
+3)go to auth reducer and create cases
+4)then add logout in navbar
+
