@@ -108,4 +108,32 @@ LOGOUT:
 2)go to auth actions and create function
 3)go to auth reducer and create cases
 4)then add logout in navbar
+Also created clearprofile type.
+
+PRIVATE ROUTE:
+Created a component PrivateRoute which will block non logged in people to access PRIVATE Routes. (e.g Dashboard)
+
+
+
+
+import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+If these 2 lines are on top that means on that page there is something that works when authenticated
+
+Few changes in landing. not working without removing export :/
+
+Created a spinner component. And added to dashboard
+
+Tip: In app.js don't use {} while importing components
+Tip2: When you take in history object, it will help you redirect to the page you came from.
+
+
+Dashboard created. 
+1)Create for add or update profile.
+2)Functions added in profile.js in actions. 
+
+
+PROFILE
+1)Add profile if not already. Else edit.
+2)Made actions and reducers in same file. But components seprate for both.
 
